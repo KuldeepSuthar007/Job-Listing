@@ -3,7 +3,6 @@ const mongoose = require('mongoose');
 const { Schema } = mongoose;
 
 const JobSchema = new Schema({
-    email: String,
     companyName: String,
     logoUrl: String,
     jobPosition: String,
@@ -14,6 +13,7 @@ const JobSchema = new Schema({
     jobDesc: String,
     aboutCompany: String,
     skills: Array,
+    information: String,
 });
 
 module.exports = mongoose.model('Job', JobSchema);
