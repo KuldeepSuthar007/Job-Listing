@@ -2,6 +2,8 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
 const dotenv = require('dotenv');
+const User = require('./models/users');
+const Job = require('./models/jobs');
 dotenv.config()
 
 const app = express();
