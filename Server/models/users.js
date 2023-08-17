@@ -17,14 +17,15 @@ const UserSchema = new Schema({
         required: true
     },
     mobile: {
-        type: Number
+        type: Number,
+        required: true,
+        unique: true
     },
     checkbox: {
-        type: Boolean
+        type: Boolean,
+        required: true,
     },
-    token: {
-        type: String
-    }
+
 });
 
 module.exports = mongoose.model('User', UserSchema);
