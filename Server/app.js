@@ -17,8 +17,7 @@ app.use(cors())
 
 app.get('/', (req, res) => {
     res.send('welcome to my website')
-    // var err = new Error("i am error");
-    // next(err);
+
 })
 
 
