@@ -3,11 +3,13 @@ const router = express.Router();
 const User = require('../models/users');
 const Jwt = require('jsonwebtoken')
 const bcrypt = require('bcrypt');
-// const verifyAuth = require('../middleware/verifyAuth');
+
 
 
 router.post('/register', async (req, res) => {
+
     try {
+
         const { name, email, password, mobile, checkbox } = req.body;
         if (!name || !email || !password || !mobile || !checkbox) {
             return res.status(400).json({
@@ -41,10 +43,9 @@ router.post('/register', async (req, res) => {
         })
 
     } catch (error) {
-        console.log(error)
         res.status(500).json({
             success: false,
-            errormessage: "Something went wrong!"
+            errormessage: "Something went wrong in register!"
         })
     }
 
@@ -78,6 +79,7 @@ router.post('/login', async (req, res) => {
             })
         }
         const jwToken = Jwt.sign({ userId: user._id }, process.env.JWT_SECRET)
+
         res.status(200).json({
             success: true,
             user: email,
@@ -87,7 +89,6 @@ router.post('/login', async (req, res) => {
         })
 
     } catch (error) {
-        console.log(error)
         res.status(500).json({
             success: false,
             errormessage: 'Something went wrong'
