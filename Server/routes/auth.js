@@ -11,6 +11,7 @@ router.post('/register', async (req, res) => {
     try {
 
         const { name, email, password, mobile, checkbox } = req.body;
+
         if (!name || !email || !password || !mobile || !checkbox) {
             return res.status(400).json({
                 success: false,
@@ -45,7 +46,7 @@ router.post('/register', async (req, res) => {
     } catch (error) {
         res.status(500).json({
             success: false,
-            errormessage: "Something went wrong in register!"
+            errormessage: "Something went wrong"
         })
     }
 
@@ -55,6 +56,7 @@ router.post('/login', async (req, res) => {
 
     try {
         const { email, password } = req.body;
+
         if (!email || !password) {
             return res.status(400).json({
                 success: false,
