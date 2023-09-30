@@ -1,0 +1,302 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans&family=Dangrek&family=Inconsolata&family=Inter&family=Roboto&family=Single+Day&family=Space+Mono&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  overflow-x: hidden;
+}
+.container {
+  width: 100vw;
+
+  /* background-color: #ffefef; */
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 12vh;
+  background-color: #ed5353;
+  padding: 0px 40px;
+  border-radius: 0px 0px 35px 35px;
+}
+.title {
+  color: white;
+  font-family: DM Sans;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 43px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.button_main {
+  display: flex;
+  gap: 10px;
+}
+.loginbtn {
+  height: 35px;
+  width: 100px;
+  font-family: DM Sans;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 33px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: white;
+  background-color: #ed5353;
+  border: none;
+  border: 2px solid white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.registerbtn {
+  height: 35px;
+  width: 100px;
+  font-family: DM Sans;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 33px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #ed5353;
+  background-color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.maincontainer {
+  width: 80vw;
+  margin: 0px auto;
+}
+.meassagebox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  width: 80vw;
+  background-color: white;
+  text-align: center;
+  margin: 20px 0px;
+  box-shadow: 0px 0px 22px 4px #ff202040;
+}
+.search {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  border-radius: 9px;
+  width: 70vw;
+  border: 1.8px solid #e3e3e3;
+}
+.search img {
+  margin-left: 10px;
+}
+.serachinput {
+  border: none;
+  outline: none;
+}
+.skills {
+  display: flex;
+  margin: 20px 0px;
+  justify-content: space-between;
+  width: 70vw;
+}
+.skills select {
+  width: 110px;
+  background: #fff;
+  border: 0.2rem solid #c2c2c2;
+  border-radius: 0.5rem;
+  box-sizing: initial;
+  color: #525252;
+  font-family: DM Sans;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: center;
+  height: 40px;
+}
+.skillselect {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 0px 10px;
+}
+.skillmain {
+  display: flex;
+  align-items: center;
+  border: none;
+  border-radius: 2px;
+  background-color: #ffeeee;
+  font-family: DM Sans;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: center;
+  height: 40px;
+}
+.skillmain p {
+  font-family: DM Sans;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: black;
+  margin: 0px 10px;
+}
+.skillmain button {
+  color: white;
+  background-color: #ed5353;
+  padding: 5px;
+  border: none;
+  width: 41px;
+  font-size: 25px;
+  cursor: pointer;
+}
+.clear {
+  font-family: DM Sans;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 29px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #ed5353;
+  cursor: pointer;
+  margin-right: 15px;
+}
+.addjobbtn {
+  height: 30px;
+  min-width: 110px;
+  background-color: #ed5353;
+  font-family: DM Sans;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 28px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  /* padding: 0px 14px; */
+  margin: 0px 10px;
+}
+.viewjobs {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0px 4px 23px 2px #0000001a;
+  margin: 18px auto;
+  box-shadow: 0px 0px 22px 2px #ff202040;
+}
+.jobinfo {
+  display: flex;
+  gap: 15px;
+}
+.clogo {
+  width: 55px;
+  height: 55px;
+}
+.basicinfo {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.jobposition {
+  font-family: Roboto;
+  font-size: 19px;
+  font-weight: 500;
+  line-height: 17px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: black;
+}
+.jobdetails {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+.jobpeople,
+.jobsalary,
+.jobarea {
+  display: flex;
+  align-items: center;
+}
+
+.jobpeople p,
+.jobsalary p,
+.jobarea p {
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #9c9c9c;
+  margin-left: 10px;
+}
+.jobtype {
+  display: flex;
+  gap: 18px;
+}
+.jobtype p {
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 13px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #ed5353;
+}
+.jobskillsets {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.jobskill {
+  display: flex;
+  justify-content: flex-end;
+}
+.jobskill button {
+  width: 105px;
+  height: 30px;
+  margin: 0px 10px;
+  padding: 0px 10px;
+  border: none;
+  border-radius: 2px;
+  background-color: #ffeeee;
+  font-family: DM Sans;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: black;
+}
+
+.viewdetail {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+}
+.viewdetail button {
+  height: 30px;
+  background-color: #ed5353;
+  font-family: DM Sans;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 28px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 0px 14px;
+  margin-right: 10px;
+}

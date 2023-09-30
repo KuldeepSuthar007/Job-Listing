@@ -1,0 +1,225 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans&family=Dangrek&family=Inconsolata&family=Inter&family=Roboto&family=Single+Day&family=Space+Mono&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+.container {
+  width: 100vw;
+  overflow: scroll;
+  scroll-behavior: smooth;
+  background-color: #ffefef;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 12vh;
+  background-color: #ed5353;
+  padding: 0px 40px;
+  border-radius: 0px 0px 35px 35px;
+}
+.title {
+  color: white;
+  font-family: DM Sans;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 43px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.button_main {
+  display: flex;
+  gap: 10px;
+}
+.loginbtn {
+  height: 35px;
+  width: 100px;
+  font-family: DM Sans;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 33px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: white;
+  background-color: #ed5353;
+  border: none;
+  border: 2px solid white;
+  border-radius: 5px;
+}
+.registerbtn {
+  height: 35px;
+  width: 100px;
+  font-family: DM Sans;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 33px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #ed5353;
+  background-color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+.maincontainer {
+  position: relative;
+  top: -10px;
+  width: 80vw;
+  margin: 0px auto;
+}
+.meassagebox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px;
+  width: 80vw;
+  background-color: white;
+  text-align: center;
+  height: 150px;
+  margin-bottom: 20px;
+  box-shadow: 0px 4px 23px 2px #0000001a;
+}
+.message {
+  font-family: DM Sans;
+  font-size: 29px;
+  font-weight: 500;
+  line-height: 42px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+.fulljob {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 70px 45px;
+  background-color: white;
+  box-shadow: 0px 4px 23px 2px #0000001a;
+}
+
+.timeAndType {
+  display: flex;
+  align-items: center;
+  font-family: DM Sans;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 29px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #999999;
+}
+.title_location_editJob {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.job_title {
+  font-family: DM Sans;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 69px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #000000;
+}
+.job_location {
+  font-family: DM Sans;
+  font-size: 21px;
+  font-weight: 500;
+  line-height: 30px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #ed5353;
+}
+
+.editjobbtn {
+  width: 150px;
+  height: 40px;
+  font-family: DM Sans;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: white;
+  background-color: #ed5353;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.stipend_duration {
+  display: flex;
+  gap: 30px;
+  margin: 20px 0px;
+}
+.stipend,
+.duration {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.wrapperstipend {
+  display: flex;
+}
+
+.wrapperduration {
+  display: flex;
+}
+.stipend_caption,
+.duration_caption {
+  font-family: DM Sans;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #999999;
+  margin-left: 10px;
+}
+
+.stipendAmount,
+.timeduration {
+  font-family: DM Sans;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 29px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #595959;
+}
+.subheading {
+  font-family: DM Sans;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 41px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #000000;
+}
+.plaintext {
+  font-family: DM Sans;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 39px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #595959;
+}
+
+.skills button {
+  font-family: DM Sans;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #595959;
+  background-color: #ffeeee;
+  border: none;
+  border-radius: 20px;
+  margin-right: 20px;
+  padding: 0px 14px;
+}
